@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @video.title %>
+</p>
+
+<p>
+  <%= video_tag(@video.file.url, controls: true) if @video.file.url.present? %>
+</p>
+
+<p>
+  <strong>File processing:</strong>
+  <%= @video.file_processing %>
+</p>
+
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>
