@@ -60,7 +60,7 @@ gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
 
 
 
-gem 'sidekiq', '~> 5.2', '>= 5.2.7'
+gem 'sidekiq', '~> 6.4'
 gem 'materialize-sass'
 
 gem 'active_model_serializers', '~> 0.10.0'
